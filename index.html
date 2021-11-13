@@ -64,7 +64,20 @@
                 <section class="hero">
                     <div class="conteiner">
                         <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
-                        <button type="button" class="button"> Заказать услугу</button>
+                        <button  type="button" class="button" data-modal-open> Заказать услугу</button>
+                        <div class="backdrop is-hidden" data-modal>
+                            <div class="modal">
+                                <p class="modal-text">
+
+                                </p>
+                                <button type="button" class="modal-button" data-modal-close> 
+                                <svg class="modal-icon">
+                                    <use href="./images/sprite.svg#icon-close-black"></use>
+                                </svg>
+                                </button>
+                            </div>
+                        </div>
+                         
                     </div>                    
                 
                 </section>
@@ -131,13 +144,23 @@
                     <div class="conteiner">
                         <h2 class="section-title">Чем мы занимаемся</h2>
                         <ul class="list card-set">
-                            <li class="card"><img src="./images/box1.jpg" alt="версия для компьютера" width="370">
+                            <li class="card card-icon"><img src="./images/box1.jpg" alt="версия для компьютера" width="370">
+                                <div class="card-text">
+                                    <h3 class="card-title">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</h3>
+                                </div>
+                                
                             </li>
                                 
-                            <li class="card"> <a href=""><img src="./images/box2.jpg" alt="версия для телефона" width="370"></a>
-                        
+                            <li class="card card-icon"><img src="./images/box2.jpg" alt="версия для телефона" width="370">
+                                <div class="card-text">
+                                    <h3 class="card-title">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</h3>
+                                </div>
+                            
                             </li>
-                            <li class="card"><a href=""><img src="./images/box3.jpg" alt="версия для планшета" width="370"></a>
+                            <li class="card card-icon"><img src="./images/box3.jpg" alt="версия для планшета" width="370">
+                                <div class="card-text">
+                                    <h3 class="card-title">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</h3>
+                                </div>
                         
                             </li>
                         </ul>
@@ -423,7 +446,7 @@
             </footer>
         
         
-
+    <script src="./js/modal.js"></script>
     </body>
 
 
